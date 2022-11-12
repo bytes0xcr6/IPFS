@@ -76,7 +76,9 @@ main()
 6. Run the script by calling `node put-files.js`, using `--token`  to supply your API token and specifying the path and name of the file you want to upload. If you'd like to upload more than one file at a time, simply specify their paths/names one after the other in a single command. Here's how that looks in template form:
 
 - `node put-files.js --token=<YOUR_TOKEN> <filename1> ~/filename2 ~/filenameN`
-  You also can run...
+
+You also can run...
+
 - `node put-files-from-fs.js --token=<YOUR_TOKEN>`
 - `node put-car-from-fs.js --token=<YOUR_TOKEN>`
 - `node put-car-dag-cbor.js --token=<YOUR_TOKEN>`
