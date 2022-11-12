@@ -1,7 +1,7 @@
 # Infura
 ![1_7yVCUf1rZTpgT0_-EQTtiw](https://user-images.githubusercontent.com/102038261/201488203-bc46dc8c-a0da-434b-91a8-97bf31fec1fd.jpg)
 
-### Stepts to upload NFTs
+### Stepts to upload NFTs (Image & metadata) to IPFS.
 
 1. Get the API-key and API-key-secret from your Infura account.
 2. Upload your image file from your terminal with the next command line:
