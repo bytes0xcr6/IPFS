@@ -2,10 +2,10 @@
 
 Examples for using the web3.storage client from Node.js.
 
-* `put-files.js` - Adds web files to web3.storage
-* `put-files-from-fs.js` - Adds files from your file system to web3.storage
-* `put-car-from-fs.js` - Adds a Content Archive (CAR) file from your file system to web3.storage
-* `put-car-dag-cbor.js` - Creates a Content Archive in memory from IPLD data and adds to web3.storage
+- `put-files.js` - Adds web files to web3.storage
+- `put-files-from-fs.js` - Adds files from your file system to web3.storage
+- `put-car-from-fs.js` - Adds a Content Archive (CAR) file from your file system to web3.storage
+- `put-car-dag-cbor.js` - Creates a Content Archive in memory from IPLD data and adds to web3.storage
 
 <h3>Stepts to upload files to IPFS</h3>
 
@@ -46,7 +46,7 @@ const cid = await storage.put(files)
 console.log('Content added with CID:', cid)
 }
 
-main() 
+main()
 ```
 
 4. Create another file called:
@@ -71,12 +71,20 @@ main()
     "license": "(Apache-2.0 AND MIT)"
 }
 ```
+
 5. Once we have added the JSON, we need to install all the dependencies, we just type on the terminal: `npm install `
 6. Run the script by calling `node put-files.js`, using `--token`  to supply your API token and specifying the path and name of the file you want to upload. If you'd like to upload more than one file at a time, simply specify their paths/names one after the other in a single command. Here's how that looks in template form:
-```node put-files.js --token=<YOUR_TOKEN> <filename1> ~/filename2 ~/filenameN```
+   `node put-files.js --token=<YOUR_TOKEN> <filename1> ~/filename2 ~/filenameN`
+   You also can run...
+   `node put-files-from-fs.js --token=<YOUR_TOKEN>`
+   `node put-car-from-fs.js --token=<YOUR_TOKEN>`
+   `node put-car-dag-cbor.js --token=<YOUR_TOKEN>`
 
-7. This will return us a CID. 
-* Example: `Content added with CID: bafybeidscipod5zke2jry6fbbsopbo5alihrqe56cuzhswxbrkljocetlm`
-8. Go to `https://dweb.link/ipfs/YOUR_CID`, replacing YOUR_CID with the CID you noted in the last step. 
-* Example:
-```https://dweb.link/ipfs/bafybeidscipod5zke2jry6fbbsopbo5alihrqe56cuzhswxbrkljocetlm```
+7. This will return us a CID.
+
+- Example: `Content added with CID: bafybeidscipod5zke2jry6fbbsopbo5alihrqe56cuzhswxbrkljocetlm`
+
+8. Go to `https://dweb.link/ipfs/YOUR_CID`, replacing YOUR_CID with the CID you noted in the last step.
+
+- Example:
+  `https://dweb.link/ipfs/bafybeidscipod5zke2jry6fbbsopbo5alihrqe56cuzhswxbrkljocetlm`
