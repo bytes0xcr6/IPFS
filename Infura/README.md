@@ -6,7 +6,7 @@
 1. Get the API-key and API-key-secret from your Infura account.
 2. Upload your image file from your terminal with the next command line:
 
-`curl -X POST -F file=@./<file> “https://ipfs.infura.io:5001/api/v0/add” -u “<API-Key>:<API-Key-Secret>”`
+`curl -X POST -F file=@./<jpgFile.jpg> “https://ipfs.infura.io:5001/api/v0/add” -u “<API-Key>:<API-Key-Secret>”`
 
 3. You will get a Hash / CID and you will be able to visualize your JPG from IPFS. 
 
@@ -15,7 +15,10 @@ https://cristianricharte6test.infura-ipfs.io/ipfs/QmSdQigdQunad8F92xekHcxEvKLKRU
 
 4. Create the JSON metadata file with all the NFT caracteristics and the IPFS URL for the NFT image.
 5. Upload your metadata file from your terminal with the next command line:
-6. You will get again a Hash / CID to visualize the Metadata upload to IPFS. 
+
+`curl -X POST -F file=@./<metadataFile.json> “https://ipfs.infura.io:5001/api/v0/add” -u “<API-Key>:<API-Key-Secret>”`
+
+7. You will get again a Hash / CID to visualize the Metadata upload to IPFS. 
 
 `Here an example:
 https://cristianricharte6test.infura-ipfs.io/ipfs/QmTuAx44re7zJbZQDhkRJxTsWXoYjN2MvSj3DF8gn99WXq`
